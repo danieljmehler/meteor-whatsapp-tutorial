@@ -5,6 +5,8 @@ import { Chats } from '../../../lib/collections';
 export default class NewChatCtrl extends Controller {
   constructor() {
     super(...arguments);
+
+    this.subscribe('users');
  
     this.helpers({
       users() {
